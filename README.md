@@ -22,7 +22,6 @@ When an incident (fire, accident, or theft) is detected, the system sends **inst
 1. **Image Capture:** Raspberry Pi Camera V2 captures images at regular intervals.
 2. **Incident Classification:** Captured images are classified as *fire*, *accident*, *theft*, or *normal* by the VGG16 model.
 3. **Real-Time Alerts:** If an incident is detected, an SMS with details is sent instantly to registered contacts.
-4. **Rescue Support:** Activates local buzzers or emergency lights to warn nearby people.
 
 ---
 
