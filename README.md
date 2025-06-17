@@ -1,50 +1,40 @@
-**Incident Detection System for Public Safety**
+# 🚨 Incident Detection System for Public Safety
 
-This project presents an IoT-based intelligent surveillance system designed to enhance public safety by automatically detecting fires, accidents, and theft incidents in real-time. Using a Raspberry Pi 3 B+ equipped with a Raspberry Pi Camera V2, the system captures images at regular intervals and classifies them using a VGG16 deep learning model fine-tuned for multi-class incident detection.
+This project presents an **IoT-based intelligent surveillance system** designed to enhance public safety by automatically detecting **fires, accidents, and theft incidents** in real-time. Using a **Raspberry Pi 3 B+** with a **Raspberry Pi Camera V2**, the system captures images at regular intervals and classifies them using a fine-tuned **VGG16 deep learning model**.
 
-When an incident (fire, accident, or theft) is identified, the system sends instant SMS alerts to registered emergency contacts via the Twilio API, enabling rapid response and minimizing potential losses. This reduces reliance on manual monitoring and ensures faster emergency intervention.
+When an incident (fire, accident, or theft) is detected, the system sends **instant SMS alerts** to registered emergency contacts via the **Twilio API**, enabling rapid response and reducing reliance on manual monitoring.
 
+---
 
+## ✅ Key Features
 
+- 🔥 **Fire Detection:** Real-time fire identification with automated notifications.
+- 🚗 **Accident Detection:** Detects road accidents and sends immediate alerts.
+- 🏃 **Theft Detection:** Recognizes suspicious theft activities for enhanced security.
+- 📡 **Low-Cost & Scalable:** Uses affordable hardware for urban and rural deployment.
+- 📲 **Instant SMS Alerts:** Sends SMS via Twilio to authorities or managers.
+- ⚙️ **Edge Processing:** Runs deep learning locally on Raspberry Pi, reducing cloud dependency.
 
+---
 
+## ⚙️ How It Works
 
+1. **Image Capture:** Raspberry Pi Camera V2 captures images at regular intervals.
+2. **Incident Classification:** Captured images are classified as *fire*, *accident*, *theft*, or *normal* by the VGG16 model.
+3. **Real-Time Alerts:** If an incident is detected, an SMS with details is sent instantly to registered contacts.
+4. **Rescue Support:** Activates local buzzers or emergency lights to warn nearby people.
 
- **Key Features**
- 
-**.Fire Detection:** Real-time identification of fire incidents with automated alerts.
+---
 
-**.Accident Detection:** Detection of road accidents and immediate notification.
+## 💡 Innovation Highlights
 
-**.Theft Detection:** Recognition of theft activities for enhanced security.
+- Combines **IoT, deep learning, and computer vision** for real-time safety monitoring.
+- Cost-effective, low-power, and easily deployable in remote or under-monitored areas.
+- Automatically sends alerts without the need for human supervision.
+- Can be scaled to monitor multiple areas using multiple Raspberry Pi setups.
 
-**.Low-cost, scalable IoT solution:** Uses affordable hardware, making it practical for urban and rural areas.
+---
+- [Dataset Used](https://drive.google.com/drive/folders/1jIPBKXk_n3OHwYnqos5j9TrnKuaPn1Vb?usp=sharing)
 
-**.Instant Notifications:** SMS alerts to authorities or responsible personnel using Twilio API.
-
-**.Edge Processing:** Runs deep learning models locally on Raspberry Pi, reducing latency and cloud dependency.
-
-
-
-
-
-
-
-**How It Works**
-
-**Image Capture:** Raspberry Pi Camera V2 captures images at set intervals.
-
-**Incident Classification**: Images are processed locally by the VGG16 model to classify them as fire, accident, theft, or normal.
-
-**Real-Time Alerts**: If an incident is detected, an SMS with incident type and (optionally) location coordinates is sent to pre-registered contacts.
-
-
-
-
-
-
-
-**Innovation**
-
-This project demonstrates how IoT, computer vision, and deep learning can be combined to create an automated, cost-effective safety monitoring solution — with applications ranging from street surveillance and smart city safety to rural area monitoring and building security.
+---
 
