@@ -1,8 +1,9 @@
 **Incident Detection System for Public Safety**
-
 This project presents an IoT-based intelligent surveillance system designed to enhance public safety by automatically detecting fires, accidents, and theft incidents in real-time. Using a Raspberry Pi 3 B+ equipped with a Raspberry Pi Camera V2, the system captures images at regular intervals and classifies them using a VGG16 deep learning model fine-tuned for multi-class incident detection.
 
 When an incident (fire, accident, or theft) is identified, the system sends instant SMS alerts to registered emergency contacts via the Twilio API, enabling rapid response and minimizing potential losses. This reduces reliance on manual monitoring and ensures faster emergency intervention.
+
+
 
 
 
@@ -22,6 +23,8 @@ When an incident (fire, accident, or theft) is identified, the system sends inst
 
 
 
+
+
 **How It Works**
 
 **Image Capture:** Raspberry Pi Camera V2 captures images at set intervals.
@@ -29,6 +32,8 @@ When an incident (fire, accident, or theft) is identified, the system sends inst
 **Incident Classification**: Images are processed locally by the VGG16 model to classify them as fire, accident, theft, or normal.
 
 **Real-Time Alerts**: If an incident is detected, an SMS with incident type and (optionally) location coordinates is sent to pre-registered contacts.
+
+
 
 
 
